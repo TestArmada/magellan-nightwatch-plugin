@@ -1,0 +1,25 @@
+{
+  "name": "testarmada-magellan-nightwatch-plugin",
+  "version": "1.0.0",
+  "description": "Magellan plugin to provide Nightwatch.js support",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TestArmada/magellan-nightwatch-plugin.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TestArmada/magellan-nightwatch-plugin/issues"
+  },
+  "homepage": "https://github.com/TestArmada/magellan-nightwatch-plugin#readme",
+  "dependencies": {
+    "acorn": "^2.6.4",
+    "cli-color": "^1.1.0",
+    "lodash": "^3.10.1",
+    "q": "^1.4.1"
+  }
+}
