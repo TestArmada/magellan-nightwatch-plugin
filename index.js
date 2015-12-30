@@ -6,7 +6,7 @@ var plugin = {
   filters: {
     tag: require("./lib/tag_filter")
   },
-  settings: require("./lib/settings")
+  settings: require("./lib/settings"),
   TestRun: require("./lib/test_run")
 };
 
