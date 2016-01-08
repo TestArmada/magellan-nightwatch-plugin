@@ -17,7 +17,8 @@ var plugin = {
     */
   },
   settings: require("./lib/settings"),
-  TestRun: require("./lib/test_run")
+  TestRun: require("./lib/test_run"),
+  help: require("./lib/help")
 };
 
 module.exports = plugin;
