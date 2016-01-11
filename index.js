@@ -1,4 +1,6 @@
 var tagFilter = require("./lib/tag_filter");
+var groupFilter = require("./lib/group_filter");
+var singleTestFilter = require("./lib/single_test_filter");
 
 var plugin = {
   initialize: function (argv) {
