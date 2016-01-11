@@ -7,14 +7,9 @@ var plugin = {
   iterator: require("./lib/get_tests"),
   filters: {
     tag: tagFilter,
-    tags: tagFilter
-
-    /*
-    TODO
-
+    tags: tagFilter,
     group: groupFilter,
     test: singleTestFilter
-    */
   },
   settings: require("./lib/settings"),
   TestRun: require("./lib/test_run"),
