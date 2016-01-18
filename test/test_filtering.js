@@ -8,8 +8,45 @@ testFramework.initialize({
 
 var getTests = testFramework.iterator;
 var tagFilter = testFramework.filters.tag;
+var singleFilter = testFramework.filters.test;
+var groupFilter = testFramework.filters.group;
 
 describe("nightwatch support", function () {
+
+  describe("group test filter", function () {
+    it("finds a bunch of tests with a group prefix", function () {
+      var tests = getTests();
+      var filteredTests = groupFilter(tests, "test_support/mock_nightwatch_tests");
+
+      expect(filteredTests).to.have.length(3);
+    });
+
+    it("finds no tests with a group prefix that matches nothing", function () {
+      var tests = getTests();
+      var filteredTests = groupFilter(tests, "nonexistant/path");
+
+      expect(filteredTests).to.have.length(0);
+    });
+
+  });
+
+
+  describe("single test filter", function () {
+    it("finds a single exact test", function () {
+      var tests = getTests();
+      var filteredTests = singleFilter(tests, "test_support/mock_nightwatch_tests/search_mobile.js");
+
+      expect(filteredTests).to.have.length(1);
+    });
+
+    it("finds no test with exact single test filter if it one doesn't exist", function () {
+      var tests = getTests();
+      var filteredTests = singleFilter(tests, "test_support/mock_nightwatch_tests/doesntexist.js");
+
+      expect(filteredTests).to.have.length(0);
+    });
+
+  });
 
   describe("tag filter", function () {
 
