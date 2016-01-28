@@ -3,8 +3,8 @@ var groupFilter = require("./lib/group_filter");
 var singleTestFilter = require("./lib/single_test_filter");
 
 var plugin = {
-  initialize: function (argv) {
-    plugin.settings.initialize(argv);
+  initialize: function (argv, options) {
+    plugin.settings.initialize(argv, options);
   },
   iterator: require("./lib/get_tests"),
   filters: {
@@ -15,7 +15,8 @@ var plugin = {
   },
   settings: require("./lib/settings"),
   TestRun: require("./lib/test_run"),
-  help: require("./lib/help")
+  help: require("./lib/help"),
+  getPluginOptions: require("./lib/options")
 };
 
 module.exports = plugin;
