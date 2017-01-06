@@ -17,13 +17,13 @@
   },
   "homepage": "https://github.com/TestArmada/magellan-nightwatch-plugin#readme",
   "dependencies": {
-    "acorn": "^2.6.4",
+    "acorn": "^4.0.4",
     "cli-color": "^1.1.0",
-    "lodash": "^3.10.1",
+    "lodash": "^4.17.2",
     "q": "^1.4.1"
   },
   "devDependencies": {
     "chai": "^3.4.1",
-    "mocha": "^2.2.4"
+    "mocha": "^3.2.0"
   }
 }
