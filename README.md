@@ -2,6 +2,8 @@
 
 A magellan plugin that connects [magellan](https://github.com/TestArmada/magellan) and [nightwatch](http://nightwatchjs.org/). 
 
+**PLEASE NOTE: v6.0.0 would only be compatible with [Magellan](https://github.com/TestArmada/magellan) v10.0.0 and higher**
+
 ## Usage
 
  1. Add following code to your `package.json`. 

@@ -1,6 +1,6 @@
 {
   "name": "testarmada-magellan-nightwatch-plugin",
-  "version": "5.2.0",
+  "version": "6.0.0",
   "description": "Magellan plugin to provide Nightwatch.js support",
   "main": "index.js",
   "scripts": {
@@ -20,7 +20,8 @@
     "acorn": "^4.0.4",
     "cli-color": "^1.1.0",
     "lodash": "^4.17.2",
-    "q": "^1.4.1"
+    "q": "^1.4.1",
+    "yargs": "^6.6.0"
   },
   "devDependencies": {
     "chai": "^3.4.1",
