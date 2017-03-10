@@ -21,7 +21,7 @@
     "cli-color": "^1.1.0",
     "lodash": "^4.17.2",
     "q": "^1.4.1",
-    "yargs": "^6.6.0"
+    "yargs": "^7.0.2"
   },
   "devDependencies": {
     "chai": "^3.4.1",
