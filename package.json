@@ -1,6 +1,6 @@
 {
   "name": "testarmada-magellan-nightwatch-plugin",
-  "version": "6.0.2",
+  "version": "7.0.0",
   "description": "Magellan plugin to provide Nightwatch.js support",
   "main": "index.js",
   "scripts": {
