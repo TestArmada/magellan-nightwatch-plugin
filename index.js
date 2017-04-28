@@ -16,7 +16,8 @@ var plugin = {
   settings: require("./lib/settings"),
   TestRun: require("./lib/test_run"),
   help: require("./lib/help"),
-  getPluginOptions: require("./lib/options")
+  getPluginOptions: require("./lib/options"),
+  profile: require("./lib/profile")
 };
 
 module.exports = plugin;
