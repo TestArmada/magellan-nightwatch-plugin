@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/TestArmada/magellan-nightwatch-plugin#readme",
   "dependencies": {
-    "acorn": "^4.0.4",
+    "acorn": "^5.2.1",
     "cli-color": "^1.1.0",
     "lodash": "^4.17.2",
     "q": "^1.4.1",
