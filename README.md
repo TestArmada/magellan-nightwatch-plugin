@@ -31,3 +31,9 @@ This plugin connects magellan and nightwatch by
 4. passing down node env/configurations for child process spawn purpose.
 ```
 
+## Update notes
+
+### @8.0.0
+
+Add `.js` config support. Right now you can name your nightwatch configuration file in both `.json` and `.js` format. Please note, to support `.js` format you also need `nightwatch-extra@5.1.0`
+
