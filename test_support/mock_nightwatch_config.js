@@ -1,0 +1,5 @@
+module.exports = {
+    "src_folders": [
+      "./test_support/mock_nightwatch_tests"
+    ]
+};
