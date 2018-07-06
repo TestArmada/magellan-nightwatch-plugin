@@ -37,3 +37,5 @@ This plugin connects magellan and nightwatch by
 
 Add `.js` config support. Right now you can name your nightwatch configuration file in both `.json` and `.js` format. Please note, to support `.js` format you also need `nightwatch-extra@5.1.0`
 
+## License
+Documentation in this project is licensed under Creative Commons Attribution 4.0 International License. Full details available at https://creativecommons.org/licenses/by/4.0
