@@ -10,6 +10,7 @@ var getTests = testFramework.iterator;
 var tagFilter = testFramework.filters.tag;
 var singleFilter = testFramework.filters.test;
 var groupFilter = testFramework.filters.group;
+var fileFilter = testFramework.filters.testFile;
 
 describe("nightwatch support", function () {
 
@@ -37,6 +38,13 @@ describe("nightwatch support", function () {
       var filteredTests = singleFilter(tests, "test_support/mock_nightwatch_tests/search_mobile.js");
 
       expect(filteredTests).to.have.length(1);
+    });
+
+    it("finds two single exact tests", function () {
+      var tests = getTests();
+      var filteredTests = singleFilter(tests, ["test_support/mock_nightwatch_tests/search.js","test_support/mock_nightwatch_tests/search_mobile.js"]);
+
+      expect(filteredTests).to.have.length(2);
     });
 
     it("finds no test with exact single test filter if it one doesn't exist", function () {
@@ -78,6 +86,15 @@ describe("nightwatch support", function () {
       expect(filteredTests).to.have.length(0);
     });
 
+  });
+
+  describe("file test filter", function () {
+    it("finds two single exact tests", function () {
+      var tests = getTests();
+      var filteredTests = fileFilter(tests, "test/tests.json");
+
+      expect(filteredTests).to.have.length(2);
+    });
   });
 
 });
