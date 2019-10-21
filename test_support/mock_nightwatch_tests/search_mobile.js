@@ -12,7 +12,11 @@ module.exports = new Test({
   "Test step two": function (client) {
     client
       .assert.elContainsText("body", "Google")
-  }
+  },
 
+  "Async test step 3": async function (client) {
+    await client
+      .assert.elContainsText("body", "Google")
+  }
 
 });
