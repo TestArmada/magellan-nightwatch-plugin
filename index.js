@@ -2,6 +2,7 @@ var tagFilter = require("./lib/tag_filter");
 var groupFilter = require("./lib/group_filter");
 var singleTestFilter = require("./lib/single_test_filter");
 var fileFilter = require("./lib/file_filter");
+var skipTagFilter = require('./lib/skip_tag_filter');
 
 var plugin = {
   initialize: function (argv, options) {
@@ -9,9 +10,11 @@ var plugin = {
   },
   iterator: require("./lib/get_tests"),
   filters: {
+    group: groupFilter,
     tag: tagFilter,
     tags: tagFilter,
-    group: groupFilter,
+    skiptag: skipTagFilter,
+    skiptags: skipTagFilter,
     test: singleTestFilter,
     testFile: fileFilter
   },

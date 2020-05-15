@@ -11,6 +11,7 @@ var tagFilter = testFramework.filters.tag;
 var singleFilter = testFramework.filters.test;
 var groupFilter = testFramework.filters.group;
 var fileFilter = testFramework.filters.testFile;
+var skipTagFilter = testFramework.filters.skiptag;
 
 describe("nightwatch support", function () {
 
@@ -57,7 +58,6 @@ describe("nightwatch support", function () {
   });
 
   describe("tag filter", function () {
-
     it("finds tests with a tag filter", function () {
       var tests = getTests();
       var filteredTests = tagFilter(tests, ["search"]);
@@ -86,6 +86,31 @@ describe("nightwatch support", function () {
       expect(filteredTests).to.have.length(0);
     });
 
+  });
+
+  describe("skiptag filter", function () {
+    it("skips tests with a skiptag filter", function () {
+      var tests = getTests();
+      var filteredTests = skipTagFilter(tests, ["wiki"]);
+
+      expect(filteredTests).to.have.length(2);
+    });
+
+    it("skips no tests with an unmatched tag filter", function () {
+      var tests = getTests();
+      var filteredTests = skipTagFilter(tests, ["xyz000"]);
+
+      expect(filteredTests).to.have.length(3);
+    });
+
+    it("skips tags in combination with a tag filter", function () {
+      var tests = getTests();
+      var filteredTests = tagFilter(tests, ["search"]);
+      var skipTests = skipTagFilter(filteredTests, ["mobile"]);
+
+      expect(filteredTests).to.have.length(2);
+      expect(skipTests).to.have.length(1);
+    })
   });
 
   describe("file test filter", function () {
