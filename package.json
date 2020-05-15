@@ -1,6 +1,6 @@
 {
-  "name": "testarmada-magellan-nightwatch-plugin",
-  "version": "8.1.0",
+  "name": "@rentpath/magellan-nightwatch-plugin",
+  "version": "9.0.0",
   "description": "Magellan plugin to provide Nightwatch.js support",
   "main": "index.js",
   "scripts": {
@@ -8,14 +8,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/TestArmada/magellan-nightwatch-plugin.git"
+    "url": "git+https://github.com/rentpath/magellan-nightwatch-plugin.git"
   },
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/TestArmada/magellan-nightwatch-plugin/issues"
+    "url": "https://github.com/rentpath/magellan-nightwatch-plugin/issues"
   },
-  "homepage": "https://github.com/TestArmada/magellan-nightwatch-plugin#readme",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "homepage": "https://github.com/rentpath/magellan-nightwatch-plugin#readme",
   "dependencies": {
     "acorn": "^7.1.0",
     "acorn-walk": "^7.0.0",
