@@ -1,3 +1,7 @@
+# :warning::warning: DEPRECATED :warning::warning:
+
+This project, and it's related TestArmada projects, will no longer be supported. No further work from the owners will be done, and no PRs will be reviewed.
+
 # magellan-nightwatch-plugin
 
 A magellan plugin that connects [magellan](https://github.com/TestArmada/magellan) and [nightwatch](http://nightwatchjs.org/). 
